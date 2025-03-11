@@ -1,0 +1,25 @@
+﻿<Page x:Class="TESTwork.View.Pages.TeacherPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TESTwork.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="430" d:DesignWidth="850"
+      Title="TeacherPage">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1" Margin="0 30 0 0">
+            <Button x:Name="AddStudentBtn" Click="AddStudentBtn_Click" Content="Добавить студента" FontSize="20" FontWeight="SemiBold"  Width="350" Height="50"/>
+            <Button x:Name="AddGroupBtn" Click="AddGroupBtn_Click" Content="Добавить группу" FontSize="20" FontWeight="SemiBold"  Width="350" Height="50" Margin="0 20 0 0"/>
+            <Button x:Name="ListStudentWithMarkBtn" Click="ListStudentWithMarkBtn_Click" Content="Список студентов с оценками" FontSize="20" FontWeight="SemiBold"  Width="350" Height="50" Margin="0 20 0 0"/>
+            <Button x:Name="DeleteStudent" Click="DeleteStudent_Click" Content="Удалить студента" FontSize="20" FontWeight="SemiBold"  Width="350" Height="50" Margin="0 20 0 0"/>
+            <Button x:Name="BackToStartBtn" Click="BackToStartBtn_Click" Content="Выйти в главное меню" FontSize="20" FontWeight="SemiBold"  Width="350" Height="50" Margin="0 20 0 0"/>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,29 @@
+﻿<Window x:Class="TESTwork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TESTwork"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="850" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="/Resources/Шеврон.jpg" />
+            <TextBlock Text="ТПСК им В.М. Максимчука" FontWeight="SemiBold" Grid.Column="1" Foreground="Black" FontSize="55" TextAlignment="Center" Background="#FF07776A"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+        </Grid>
+       
+    </Grid>
+</Window>
