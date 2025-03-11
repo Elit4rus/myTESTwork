@@ -1,0 +1,25 @@
+﻿<Page x:Class="TESTwork.View.Pages.ListStudentPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TESTwork.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="430" d:DesignWidth="850"
+      Title="Список студентов с оценками">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Grid.Column="1">
+            
+        </Grid>
+    </Grid>
+</Page>

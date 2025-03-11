@@ -67,6 +67,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Pages\ListStudentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Pages\StartPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -92,6 +96,9 @@
     </Compile>
     <Compile Include="View\Pages\AuthPage.xaml.cs">
       <DependentUpon>AuthPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\ListStudentPage.xaml.cs">
+      <DependentUpon>ListStudentPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Pages\StartPage.xaml.cs">
       <DependentUpon>StartPage.xaml</DependentUpon>

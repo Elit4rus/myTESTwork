@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TESTwork.AppData;
 
 namespace TESTwork.View.Pages
 {
@@ -32,7 +33,7 @@ namespace TESTwork.View.Pages
 
         private void BackBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameHelper.mainFrame.Navigate(new View.Pages.TeacherPage());
         }
     }
 }

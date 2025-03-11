@@ -28,12 +28,12 @@ namespace TESTwork.View.Pages
 
         private void AddStudentBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameHelper.mainFrame.Navigate(new View.Pages.AddStudentPage());
         }
 
         private void AddGroupBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameHelper.mainFrame.Navigate(new View.Pages.AddGroupPage());
         }
 
         private void DeleteStudent_Click(object sender, RoutedEventArgs e)

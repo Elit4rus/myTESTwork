@@ -12,28 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using TESTwork.AppData;
 
 namespace TESTwork.View.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AddStudentPage.xaml
+    /// Логика взаимодействия для ListStudentPage.xaml
     /// </summary>
-    public partial class AddStudentPage : Page
+    public partial class ListStudentPage : Page
     {
-        public AddStudentPage()
+        public ListStudentPage()
         {
             InitializeComponent();
-        }
-
-        private void BackBtn_Click(object sender, RoutedEventArgs e)
-        {
-            FrameHelper.mainFrame.Navigate(new View.Pages.TeacherPage());
-        }
-
-        private void AddBtn_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
