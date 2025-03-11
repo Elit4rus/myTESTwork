@@ -28,14 +28,14 @@ namespace TESTwork.View.Pages
 
         private void OKbtn_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(LoginTb.Text))
+            if (string.IsNullOrEmpty(LoginTb.Password))
             {
                 MessageBox.Show("Введите пароль");
 
             }
             else
             {
-                if (LoginTb.Text == "123")
+                if (LoginTb.Password == "123")
                 {
                     MessageBox.Show("Данные верны");
                     FrameHelper.mainFrame.Navigate(new View.Pages.TeacherPage());

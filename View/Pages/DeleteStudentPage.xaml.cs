@@ -17,11 +17,11 @@ using TESTwork.AppData;
 namespace TESTwork.View.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для ListStudentPage.xaml
+    /// Логика взаимодействия для DeleteStudentPage.xaml
     /// </summary>
-    public partial class ListStudentPage : Page
+    public partial class DeleteStudentPage : Page
     {
-        public ListStudentPage()
+        public DeleteStudentPage()
         {
             InitializeComponent();
         }
@@ -31,7 +31,7 @@ namespace TESTwork.View.Pages
             FrameHelper.mainFrame.Navigate(new View.Pages.TeacherPage());
         }
 
-        private void PrintBtn_Click(object sender, RoutedEventArgs e)
+        private void DeleteBtn_Click(object sender, RoutedEventArgs e)
         {
 
         }

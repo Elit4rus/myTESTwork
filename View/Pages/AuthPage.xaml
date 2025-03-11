@@ -30,7 +30,7 @@
             </Grid.ColumnDefinitions>
 
             <TextBlock Grid.Column="1" Text="Светлана Дмитриевна, введите пароль:" FontSize="22" HorizontalAlignment="Center"/>
-            <TextBox x:Name="LoginTb" Grid.Row="2" Grid.Column="1" Width="250" FontSize="20" VerticalContentAlignment="Center"/>
+            <PasswordBox x:Name="LoginTb" Grid.Row="2" Grid.Column="1" Width="250" FontSize="20" VerticalContentAlignment="Center"/>
             <Button x:Name="OKbtn" Grid.Column="1" Grid.Row="4" Width="150" Content="ОК" FontSize="22" Click="OKbtn_Click"/>
         </Grid>
     </Grid>

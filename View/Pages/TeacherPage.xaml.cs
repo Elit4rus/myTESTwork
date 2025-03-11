@@ -38,12 +38,12 @@ namespace TESTwork.View.Pages
 
         private void DeleteStudent_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameHelper.mainFrame.Navigate(new View.Pages.DeleteStudentPage());
         }
 
         private void ListStudentWithMarkBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameHelper.mainFrame.Navigate(new View.Pages.ListStudentPage());
         }
 
         private void BackToStartBtn_Click(object sender, RoutedEventArgs e)
