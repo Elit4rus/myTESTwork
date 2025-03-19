@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TESTwork.View.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="430" d:DesignWidth="850"
+      d:DesignHeight="500" d:DesignWidth="1200"
       Title="TeacherPage">
 
     <Grid Background="White">
@@ -14,7 +14,7 @@
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="1" Margin="0 30 0 0">
+        <StackPanel Grid.Column="1" Margin="0 80 0 0">
             <Button x:Name="AddStudentBtn" Click="AddStudentBtn_Click" Content="Добавить студента" FontSize="20" FontWeight="SemiBold"  Width="350" Height="50"/>
             <Button x:Name="AddGroupBtn" Click="AddGroupBtn_Click" Content="Добавить группу" FontSize="20" FontWeight="SemiBold"  Width="350" Height="50" Margin="0 20 0 0"/>
             <Button x:Name="ListStudentWithMarkBtn" Click="ListStudentWithMarkBtn_Click" Content="Список студентов с оценками" FontSize="20" FontWeight="SemiBold"  Width="350" Height="50" Margin="0 20 0 0"/>
