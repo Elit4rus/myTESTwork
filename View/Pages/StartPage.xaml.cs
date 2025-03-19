@@ -28,7 +28,7 @@ namespace TESTwork.View.Pages
 
         private void StudentBtn_Click(object sender, RoutedEventArgs e)
         {
-            //FrameHelper.mainFrame.Navigate(new View.Pages.StudentPage());
+            FrameHelper.mainFrame.Navigate(new View.Pages.ChoisePage());
         }
 
         private void TeacherBtn_Click(object sender, RoutedEventArgs e)

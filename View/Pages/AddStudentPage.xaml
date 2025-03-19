@@ -37,7 +37,7 @@
                 <TextBox x:Name="FullNameTb" Grid.Column="2"/>
                 
                 <TextBlock Grid.Row="2" Text="Группа" FontSize="20" VerticalAlignment="Center"/>
-                <ComboBox Grid.Row="2" Grid.Column="2"/>
+                <ComboBox Name="GroupCmb" Grid.Row="2" Grid.Column="2"/>
 
                 <Button x:Name="AddBtn" Click="AddBtn_Click" Grid.Row="4" Content="Добавить" FontSize="20"/>
                 <Button x:Name="BackBtn" Click="BackBtn_Click"  Grid.Column="2" Grid.Row="4" Content="Назад" FontSize="20"/>

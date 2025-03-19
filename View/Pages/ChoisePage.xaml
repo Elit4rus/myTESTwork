@@ -9,7 +9,7 @@
       Title="ChoisePage">
 
     <Grid Background="White">
-        <StackPanel x:Name="StackPanel1" Orientation="Vertical" Margin="250 20 250 20">
+        <StackPanel x:Name="StackPanel1" Orientation="Vertical" Margin="250 70 250 20">
             <TextBlock Text="Выберите группу" FontSize="30"/>
             <ComboBox Name="GroupCmb" FontWeight="Bold" FontSize="30" SelectionChanged="GroupCmb_SelectionChanged"/>
             <TextBlock Text="Выберите студента" FontSize="30"/>

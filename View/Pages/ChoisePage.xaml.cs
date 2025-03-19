@@ -61,7 +61,7 @@ namespace TESTwork.View.Pages
             }
             else if (TestCmb.Text == "Общие основые функционирования субъектов хозяйствования")
             {
-                //FrameHelper.mainFrame.Navigate(new View.Pages.Test1Page());
+                FrameHelper.mainFrame.Navigate(new View.Pages.Test1Page());
             }
             else if (TestCmb.Text == "Сущность и структура основного капитала и оборотных средств предприятия")
             {

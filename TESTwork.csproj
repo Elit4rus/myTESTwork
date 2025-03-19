@@ -94,6 +94,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Pages\Test1Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Windows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -153,6 +157,9 @@
     </Compile>
     <Compile Include="View\Pages\TeacherPage.xaml.cs">
       <DependentUpon>TeacherPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\Test1Page.xaml.cs">
+      <DependentUpon>Test1Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

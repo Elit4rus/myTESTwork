@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using TESTwork.AppData;
+using TESTwork.Model;
 
 namespace TESTwork.View.Pages
 {
@@ -28,7 +29,27 @@ namespace TESTwork.View.Pages
 
         private void AddBtn_Click(object sender, RoutedEventArgs e)
         {
+            string mes = "";
+            if (string.IsNullOrWhiteSpace(GroupTb.Text))
+            {
+                mes += "Введите название группы\n";
+            }
+            if (mes != "")
+            {
+                MessageBox.Show(mes);
+                mes = "";
+                return;
+            }
 
+            Group group = new Group()
+            {
+                Name = GroupTb.Text,
+            };
+            App.context.Group.Add(group);
+            App.context.SaveChanges();
+            MessageBox.Show("Группа добавлена");
+
+            GroupTb.Text = "";
         }
 
         private void BackBtn_Click(object sender, RoutedEventArgs e)

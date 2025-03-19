@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using TESTwork.AppData;
+using TESTwork.Model;
 
 namespace TESTwork.View.Pages
 {
@@ -24,6 +25,9 @@ namespace TESTwork.View.Pages
         public AddStudentPage()
         {
             InitializeComponent();
+            GroupCmb.SelectedValuePath = "ID";
+            GroupCmb.DisplayMemberPath = "Name";
+            GroupCmb.ItemsSource = App.context.Group.ToList();
         }
 
         private void BackBtn_Click(object sender, RoutedEventArgs e)
@@ -33,7 +37,40 @@ namespace TESTwork.View.Pages
 
         private void AddBtn_Click(object sender, RoutedEventArgs e)
         {
+            string mes = "";
+            if (string.IsNullOrWhiteSpace(FullNameTb.Text))
+            {
+                mes += "Введите ФИО\n";
+            }
+            if (string.IsNullOrWhiteSpace(GroupCmb.Text))
+            {
+                mes += "Выберите группу\n";
+            }
+            if (mes != "")
+            {
+                MessageBox.Show(mes);
+                mes = "";
+                return;
+            }
 
+            Group selectedGroup = GroupCmb.SelectedItem as Group;
+            if (selectedGroup == null)
+            {
+                MessageBox.Show("Ошибка выбора группы");
+                return;
+            }
+
+            Student student = new Student()
+            {
+                Name = FullNameTb.Text,
+                GroupID = selectedGroup.ID
+            };
+            App.context.Student.Add(student);
+            App.context.SaveChanges();
+            MessageBox.Show("Студент добавлен");
+
+            FullNameTb.Text = "";
+            GroupCmb.Text = "";
         }
     }
 }
