@@ -36,14 +36,14 @@
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock Text="Название группы:" FontSize="20" VerticalAlignment="Center" Margin="0 0 20 0"/>
-                <ComboBox Name="GroupCmb" Grid.Column="1"/>
+                <ComboBox FontSize="20" VerticalContentAlignment="Center" Name="GroupCmb" Grid.Column="1"/>
                 <Button Grid.Column="3" Content="Поиск" FontSize="20"/>
             </Grid>
 
-            <ListView Grid.Row="2" FontSize="20">
+            <ListView x:Name="StudentsLv" Grid.Row="2" FontSize="20">
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Header="ФИО"/>
+                        <GridViewColumn Header="ФИО" DisplayMemberBinding="{Binding Name}"/>
                     </GridView>
                 </ListView.View>
             </ListView>
